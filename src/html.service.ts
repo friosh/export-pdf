@@ -14,6 +14,7 @@ export class GeneratePdfFromHtmlService {
       const page = await browser.newPage();
 
       await page.setExtraHTTPHeaders({
+        // TODO: add claudflare token here
         Authorization: `Bearer ${token}`,
       });
 
